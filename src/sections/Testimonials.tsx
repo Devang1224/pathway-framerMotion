@@ -100,9 +100,9 @@ const testimonials = [
   { 
   // adding values twice for the animation 
   
-  [...new Array(2)].fill(0).map((_, index)=>(
+  [...new Array(2)].fill(0).map((_, i)=>(
     
-    <React.Fragment>
+    <React.Fragment key={i}>
     {  props.testimonials.map((item,index)=>(
       <div key={index} className="card">
              <div>{item.text}</div>
